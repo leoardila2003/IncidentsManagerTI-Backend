@@ -1,8 +1,8 @@
-using Entities.Severity;
+using Backend.Entities.Severity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.SeverityConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.SeverityConfig;
 
 public class SeverityEntity : IEntityTypeConfiguration<Severity>
 {

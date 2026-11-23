@@ -1,8 +1,8 @@
-using Entities.Project;
+using Backend.Entities.Project;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.ProjectConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.ProjectConfig;
 
 public class ProjectEntity : IEntityTypeConfiguration<Project>
 {

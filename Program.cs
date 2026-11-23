@@ -1,14 +1,14 @@
 using System.Data;
-using Cors;
+using Backend.Cors;
 using FluentValidation;
-using Mapping;
+using Backend.Mapping;
 using Microsoft.EntityFrameworkCore;
-using Middlewares;
-using Persistence.DapperConnection;
-using Persistence.EfCoreConnection;
-using Repositories;
+using Backend.Middlewares;
+using Backend.Persistence.DapperConnection;
+using Backend.Persistence.EfCoreConnection;
+using Backend.Repositories;
 using Scalar.AspNetCore;
-using Services;
+using Backend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,7 +56,7 @@ builder.Services.AddRepositories();
 builder.Services.AddServices();
 
 // Mapeador
-builder.Services.AddSingleton<BackendProfile>();
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(BackendProfile).Assembly));
 
 // Validadores
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();

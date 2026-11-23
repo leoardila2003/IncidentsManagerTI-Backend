@@ -1,4 +1,4 @@
-namespace Entities.DocumentType;
+namespace Backend.Entities.DocumentType;
 
 public class DocumentType
 {

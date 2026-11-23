@@ -1,4 +1,4 @@
-namespace Cors;
+namespace Backend.Cors;
 
 public static class CorsService
 {

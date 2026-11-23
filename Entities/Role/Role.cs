@@ -1,4 +1,4 @@
-namespace Entities.Role;
+namespace Backend.Entities.Role;
 
 public class Role
 {

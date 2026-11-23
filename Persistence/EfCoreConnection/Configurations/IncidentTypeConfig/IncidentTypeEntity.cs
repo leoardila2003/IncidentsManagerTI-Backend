@@ -1,8 +1,8 @@
-using Entities.IncidentType;
+using Backend.Entities.IncidentType;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.IncidentTypeConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.IncidentTypeConfig;
 
 public class IncidentTypeEntity : IEntityTypeConfiguration<IncidentType>
 {

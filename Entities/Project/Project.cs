@@ -1,4 +1,4 @@
-namespace Entities.Project;
+namespace Backend.Entities.Project;
 
 public class Project
 {

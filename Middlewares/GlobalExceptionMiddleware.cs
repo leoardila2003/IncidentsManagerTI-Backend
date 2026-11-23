@@ -1,8 +1,8 @@
 using System.Text.Json;
-using Exceptions;
-using Responses;
+using Backend.Exceptions;
+using Backend.Responses;
 
-namespace Middlewares;
+namespace Backend.Middlewares;
 
 public class GlobalExceptionMiddleware
 {

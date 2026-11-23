@@ -1,4 +1,4 @@
-namespace Entities.Severity;
+namespace Backend.Entities.Severity;
 
 public class Severity
 {

@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="17.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
     <!-- Pinned to patch transitive advisory GHSA-v5pm-xwqc-g5wc (Microsoft.OpenApi 2.0.0) -->
     <PackageReference Include="Microsoft.OpenApi" Version="2.13.1" />
-    <PackageReference Include="Riok.Mapperly" Version="4.3.1" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
     <PackageReference Include="Dapper" Version="2.1.100" />
     <PackageReference Include="DotNetEnv" Version="3.2.0" />

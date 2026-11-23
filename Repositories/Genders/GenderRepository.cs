@@ -1,8 +1,8 @@
-using Entities.Gender;
+using Backend.Entities.Gender;
 using Microsoft.EntityFrameworkCore;
-using Persistence.EfCoreConnection;
+using Backend.Persistence.EfCoreConnection;
 
-namespace Repositories.Genders;
+namespace Backend.Repositories.Genders;
 
 public class GenderRepository : IGenderRepository
 {

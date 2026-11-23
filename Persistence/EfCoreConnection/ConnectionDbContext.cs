@@ -1,14 +1,14 @@
-using Entities.DocumentType;
-using Entities.Gender;
-using Entities.IncidentType;
-using Entities.KanbanCategory;
-using Entities.Permission;
-using Entities.Project;
-using Entities.Role;
-using Entities.Severity;
+using Backend.Entities.DocumentType;
+using Backend.Entities.Gender;
+using Backend.Entities.IncidentType;
+using Backend.Entities.KanbanCategory;
+using Backend.Entities.Permission;
+using Backend.Entities.Project;
+using Backend.Entities.Role;
+using Backend.Entities.Severity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Persistence.EfCoreConnection;
+namespace Backend.Persistence.EfCoreConnection;
 
 public class ConnectionDbContext : DbContext
 {

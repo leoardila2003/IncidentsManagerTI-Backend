@@ -1,4 +1,4 @@
-namespace Entities.IncidentType;
+namespace Backend.Entities.IncidentType;
 
 public class IncidentType
 {

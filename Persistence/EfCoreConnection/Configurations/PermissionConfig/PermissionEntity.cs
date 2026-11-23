@@ -1,8 +1,8 @@
-using Entities.Permission;
+using Backend.Entities.Permission;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.PermissionConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.PermissionConfig;
 
 public class PermissionEntity : IEntityTypeConfiguration<Permission>
 {

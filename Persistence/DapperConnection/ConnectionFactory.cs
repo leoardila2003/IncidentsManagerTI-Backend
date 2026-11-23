@@ -1,7 +1,7 @@
 using System.Data;
 using Npgsql;
 
-namespace Persistence.DapperConnection;
+namespace Backend.Persistence.DapperConnection;
 
 public class ConnectionFactory : IDbConnectionFactory
 {

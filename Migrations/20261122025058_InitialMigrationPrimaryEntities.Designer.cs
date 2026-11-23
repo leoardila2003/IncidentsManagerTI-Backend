@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Persistence.EfCoreConnection;
+using Backend.Persistence.EfCoreConnection;
 
 #nullable disable
 
@@ -25,7 +25,7 @@ namespace Backend.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Entities.DocumentType.DocumentType", b =>
+            modelBuilder.Entity("Backend.Entities.DocumentType.DocumentType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,7 +56,7 @@ namespace Backend.Migrations
                     b.ToTable("document_types", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.Gender.Gender", b =>
+            modelBuilder.Entity("Backend.Entities.Gender.Gender", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -87,7 +87,7 @@ namespace Backend.Migrations
                     b.ToTable("genders", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.IncidentType.IncidentType", b =>
+            modelBuilder.Entity("Backend.Entities.IncidentType.IncidentType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -126,7 +126,7 @@ namespace Backend.Migrations
                     b.ToTable("incident_types", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.KanbanCategory.KanbanCategory", b =>
+            modelBuilder.Entity("Backend.Entities.KanbanCategory.KanbanCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -177,7 +177,7 @@ namespace Backend.Migrations
                     b.ToTable("kanban_categories", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.Permission.Permission", b =>
+            modelBuilder.Entity("Backend.Entities.Permission.Permission", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -208,7 +208,7 @@ namespace Backend.Migrations
                     b.ToTable("permissions", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.Project.Project", b =>
+            modelBuilder.Entity("Backend.Entities.Project.Project", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -264,7 +264,7 @@ namespace Backend.Migrations
                     b.ToTable("projects", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.Role.Role", b =>
+            modelBuilder.Entity("Backend.Entities.Role.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -301,7 +301,7 @@ namespace Backend.Migrations
                     b.ToTable("roles", (string)null);
                 });
 
-            modelBuilder.Entity("Entities.Severity.Severity", b =>
+            modelBuilder.Entity("Backend.Entities.Severity.Severity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

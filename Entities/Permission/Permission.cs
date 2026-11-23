@@ -1,4 +1,4 @@
-namespace Entities.Permission;
+namespace Backend.Entities.Permission;
 
 public class Permission
 {

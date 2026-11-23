@@ -1,4 +1,4 @@
-namespace Exceptions;
+namespace Backend.Exceptions;
 
 public class ConflictException : Exception
 {

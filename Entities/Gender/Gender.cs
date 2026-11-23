@@ -1,4 +1,4 @@
-namespace Entities.Gender;
+namespace Backend.Entities.Gender;
 
 public class Gender
 {

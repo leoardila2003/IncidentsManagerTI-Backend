@@ -1,13 +1,14 @@
-using Dtos.Genders;
-using Entities.Gender;
-using Riok.Mapperly.Abstractions;
+using AutoMapper;
+using Backend.Dtos.Genders;
+using Backend.Entities.Gender;
 
-namespace Mapping;
+namespace Backend.Mapping;
 
-[Mapper]
-public partial class BackendProfile
+public class BackendProfile : Profile
 {
-  // Géneros
-  public partial GenderResponseDto ToDto(Gender entity);
-  public partial IEnumerable<GenderResponseDto> ToDto(IEnumerable<Gender> entities);
+  public BackendProfile()
+  {
+    // Géneros
+    CreateMap<Gender, GenderResponseDto>();
+  }
 }

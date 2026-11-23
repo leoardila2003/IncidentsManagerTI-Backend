@@ -1,8 +1,8 @@
-using Entities.KanbanCategory;
+using Backend.Entities.KanbanCategory;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.KanbanCategoryConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.KanbanCategoryConfig;
 
 public class KanbanCategoryEntity : IEntityTypeConfiguration<KanbanCategory>
 {

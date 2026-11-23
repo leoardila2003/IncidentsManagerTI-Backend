@@ -1,6 +1,6 @@
-using Entities.Gender;
+using Backend.Entities.Gender;
 
-namespace Repositories.Genders;
+namespace Backend.Repositories.Genders;
 
 public interface IGenderRepository
 {

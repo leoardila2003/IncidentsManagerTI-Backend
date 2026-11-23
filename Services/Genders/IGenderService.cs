@@ -1,6 +1,6 @@
-using Dtos.Genders;
+using Backend.Dtos.Genders;
 
-namespace Services.Genders;
+namespace Backend.Services.Genders;
 
 public interface IGenderService
 {

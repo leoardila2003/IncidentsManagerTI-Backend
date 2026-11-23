@@ -1,4 +1,4 @@
-namespace Responses;
+namespace Backend.Responses;
 
 public class CustomApiResponses<T>
 {

@@ -1,6 +1,6 @@
-using Repositories.Genders;
+using Backend.Repositories.Genders;
 
-namespace Repositories;
+namespace Backend.Repositories;
 
 public static class InjectRepositories
 {

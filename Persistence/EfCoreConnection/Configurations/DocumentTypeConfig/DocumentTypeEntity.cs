@@ -1,8 +1,8 @@
-using Entities.DocumentType;
+using Backend.Entities.DocumentType;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.DocumentTypeConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.DocumentTypeConfig;
 
 public class DocumentTypeConfig : IEntityTypeConfiguration<DocumentType>
 {

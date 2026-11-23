@@ -1,8 +1,8 @@
-using Entities.Role;
+using Backend.Entities.Role;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.RoleConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.RoleConfig;
 
 public class RoleEntity : IEntityTypeConfiguration<Role>
 {

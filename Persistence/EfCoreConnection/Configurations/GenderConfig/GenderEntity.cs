@@ -1,8 +1,8 @@
-using Entities.Gender;
+using Backend.Entities.Gender;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.EfCoreConnection.Configurations.GenderConfig;
+namespace Backend.Persistence.EfCoreConnection.Configurations.GenderConfig;
 
 public class GenderEntity : IEntityTypeConfiguration<Gender>
 {

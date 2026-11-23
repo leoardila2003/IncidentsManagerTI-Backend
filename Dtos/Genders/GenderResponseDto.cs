@@ -1,4 +1,4 @@
-namespace Dtos.Genders;
+namespace Backend.Dtos.Genders;
 
 public class GenderResponseDto
 {

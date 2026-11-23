@@ -1,8 +1,8 @@
 using System.Data;
-using Exceptions;
-using Persistence.DapperConnection;
+using Backend.Exceptions;
+using Backend.Persistence.DapperConnection;
 
-namespace Repositories;
+namespace Backend.Repositories;
 
 public abstract class RepositoryGuard
 {

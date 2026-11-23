@@ -1,4 +1,4 @@
-namespace Entities.KanbanCategory;
+namespace Backend.Entities.KanbanCategory;
 
 public class KanbanCategory
 {
