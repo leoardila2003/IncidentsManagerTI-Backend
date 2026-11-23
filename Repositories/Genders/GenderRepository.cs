@@ -4,14 +4,9 @@ using Backend.Persistence.EfCoreConnection;
 
 namespace Backend.Repositories.Genders;
 
-public class GenderRepository : IGenderRepository
+public class GenderRepository(ConnectionDbContext dbContext) : IGenderRepository
 {
-  private readonly ConnectionDbContext _dbContext;
-
-  public GenderRepository(ConnectionDbContext dbContext)
-  {
-    _dbContext = dbContext;
-  }
+  private readonly ConnectionDbContext _dbContext = dbContext;
 
   public async Task<IEnumerable<Gender>> GetAllAsync()
   {

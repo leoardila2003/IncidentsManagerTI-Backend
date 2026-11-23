@@ -5,16 +5,10 @@ using Backend.Repositories.Genders;
 
 namespace Backend.Services.Genders;
 
-public class GenderService : IGenderService
+public class GenderService(IGenderRepository genderRepository, IMapper mapper) : IGenderService
 {
-  private readonly IGenderRepository _genderRepository;
-  private readonly IMapper _mapper;
-
-  public GenderService(IGenderRepository genderRepository, IMapper mapper)
-  {
-    _genderRepository = genderRepository;
-    _mapper = mapper;
-  }
+  private readonly IGenderRepository _genderRepository = genderRepository;
+  private readonly IMapper _mapper = mapper;
 
   public async Task<IEnumerable<GenderResponseDto>> GetAllAsync()
   {
@@ -24,7 +18,9 @@ public class GenderService : IGenderService
 
   public async Task<GenderResponseDto?> GetByIdAsync(int id)
   {
-    var gender = await _genderRepository.GetByIdAsync(id) ?? throw new NotFoundException("Género no encontrado");
+    var gender = await _genderRepository.GetByIdAsync(id) 
+      ?? throw new NotFoundException("Género no encontrado");
+    
     return _mapper.Map<GenderResponseDto>(gender);
   }
 }
