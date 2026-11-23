@@ -31,7 +31,7 @@ public class ConnectionDbContext : DbContext
   public DbSet<Role> Roles { get; set; }
   public DbSet<Permission> Permissions { get; set; }
   public DbSet<Severity> Severities { get; set; }
-  public DbSet<IncidentType> IncidentType { get; set; }
+  public DbSet<IncidentType> IncidentTypes { get; set; }
   public DbSet<KanbanCategory> KanbanCategories { get; set; }
   public DbSet<Project> Projects { get; set; }
 }

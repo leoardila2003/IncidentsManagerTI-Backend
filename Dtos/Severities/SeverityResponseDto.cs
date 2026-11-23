@@ -3,8 +3,8 @@ namespace Backend.Dtos.Severities;
 public class SeverityResponseDto
 {
   public int Id { get; set; }
-  public string Name { get; set; } = string.Empty; // Único
+  public string Name { get; set; } = string.Empty;
   public string? Description { get; set; }
-  public string Code { get; set; } = string.Empty; // Único
+  public string Code { get; set; } = string.Empty;
   public int Weight { get; set; }
 }
