@@ -10,7 +10,7 @@ public class DocumentTypesController(IDocumentTypeService documentTypeService) :
   [HttpGet]
   public async Task<IActionResult> GetAll()
   {
-    var documentTypes = _documentTypeService.GetAllAsync();
+    var documentTypes = await _documentTypeService.GetAllAsync();
     return OkResponse(documentTypes);
   }
 
